@@ -1,9 +1,9 @@
 # Site wide configuration
 
-title: Site Title
-locale: en_US
-description: Describe your website here.
-logo: site-logo.png
+title: <span style='color:white;background-color:black;'>文字</span><span style='color:black;background-color:white;'>照片</span><div>de</div><span style='color:red;background-color:black;'>较</span><span style='color:green;background-color:black;'>量</span>
+locale: zh_CN
+description: rushui's blog.
+logo: site-head.png
 search: true
 url: http://localhost:4000
 
@@ -31,9 +31,9 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Your Name
+  name: rushui
   avatar: bio-photo.jpg
-  email: you@email.com
+  email: tanpf2012@email.com
   disqus-shortname:
   twitter: #username
   facebook: #username

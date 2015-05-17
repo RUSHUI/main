@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Sample Post
-excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+title: 我的第一篇文章
+excerpt: "这边文章仅庆贺自己开博而书。"
 modified: 2013-05-31
 categories: articles
-tags: [sample-post]
+tags: ["【喜悦】"]
 image:
-  feature: so-simple-sample-image-1.jpg
+  feature: river&mountain.png
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 comments: true

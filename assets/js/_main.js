@@ -4,7 +4,7 @@
 var navigation = responsiveNav("#site-nav", { // Selector: The ID of the wrapper
   animate: true, // Boolean: Use CSS3 transitions, true or false
   transition: 200, // Integer: Speed of the transition, in milliseconds
-  label: "<i class='fa fa-bars'></i> Menu", // String: Label for the navigation toggle
+  label: "<i class='fa fa-bars'></i> 导引", // String: Label for the navigation toggle
   insert: "before", // String: Insert the toggle before or after the navigation
   customToggle: "", // Selector: Specify the ID of a custom toggle
   openPos: "relative", // String: Position of the opened nav, relative or static
@@ -47,7 +47,7 @@ $(document).ready(function() {
       tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
     },
     removalDelay: 300, // Delay in milliseconds before popup is removed
-    // Class that is added to body when popup is open. 
+    // Class that is added to body when popup is open.
     // make it unique to apply your CSS animations just to this exact popup
     mainClass: 'mfp-fade'
   });
