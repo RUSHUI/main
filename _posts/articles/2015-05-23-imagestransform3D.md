@@ -1,6 +1,6 @@
 ---
 layout: defaults
-title: 同学们，你们好美有木有
+title: 同学们<br>你们好美有木有
 excerpt: "暂放同学的相册"
 modified: 2015-05-17
 categories: articles
