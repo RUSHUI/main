@@ -107,10 +107,10 @@ ge1doot.Pointer = function (setup) {
   var sY          = 0;
   // prevent default behavior
   if (setup.tap) this.elem.onclick = function () { return false; }
-  if (!setup.documentMove) {
-    document.ontouchmove = function(e) { e.preventDefault(); }
-  }
-  document.addEventListener("MSHoldVisual", function(e) { e.preventDefault(); }, false);
+  // if (!setup.documentMove) {
+  //   document.ontouchmove = function(e) { e.preventDefault(); }
+  // }
+  this.elem.addEventListener("MSHoldVisual", function(e) { e.preventDefault(); }, false);
   if (typeof this.elem.style.msTouchAction != 'undefined') this.elem.style.msTouchAction = "none";
 
   this.pointerDown = function (e) {
@@ -181,13 +181,13 @@ ge1doot.Pointer = function (setup) {
     sX = 0;
     sY = 0;
   }
-  if ('ontouchstart' in window) {
-    this.elem.ontouchstart      = function (e) { self.pointerDown(e); return false;  }
-    this.elem.ontouchmove       = function (e) { self.pointerMove(e); return false;  }
-    this.elem.ontouchend        = function (e) { self.pointerUp(e); return false;    }
-    this.elem.ontouchcancel     = function (e) { self.pointerCancel(e); return false;}
-  }
-  document.addEventListener("mousedown", function (e) {
+  // if ('ontouchstart' in window) {
+  //   this.elem.ontouchstart      = function (e) { self.pointerDown(e); return false;  }
+  //   this.elem.ontouchmove       = function (e) { self.pointerMove(e); return false;  }
+  //   this.elem.ontouchend        = function (e) { self.pointerUp(e); return false;    }
+  //   this.elem.ontouchcancel     = function (e) { self.pointerCancel(e); return false;}
+  // }
+  this.elem.addEventListener("mousedown", function (e) {
     if (
       e.target === self.elem ||
       (e.target.parentNode && e.target.parentNode === self.elem) ||
@@ -202,11 +202,11 @@ ge1doot.Pointer = function (setup) {
       self.pointerDown(e);
     }
   }, false);
-  document.addEventListener("mousemove", function (e) { self.pointerMove(e); }, false);
-  document.addEventListener("mouseup",   function (e) {
+ this.elem.addEventListener("mousemove", function (e) { self.pointerMove(e); }, false);
+  this.elem.addEventListener("mouseup",   function (e) {
     self.pointerUp(e);
   }, false);
-  document.addEventListener('gesturechange', function(e) {
+  this.elem.addEventListener('gesturechange', function(e) {
     e.preventDefault();
     if (e.scale > 1) self.scale = 0.1; else if (e.scale < 1) self.scale = -0.1; else self.scale = 0;
     self.setup.scale && self.setup.scale(e);
