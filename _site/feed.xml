@@ -4,13 +4,63 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://127.0.0.1:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://127.0.0.1:4000" />
-<updated>2015-05-23T16:22:26+08:00</updated>
+<updated>2015-05-23T19:33:02+08:00</updated>
 <id>http://127.0.0.1:4000/</id>
 <author>
   <name>rushui</name>
   <uri>http://127.0.0.1:4000/</uri>
   <email>tanpf2012@email.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[同学们，你们好美有木有]]></title>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/articles/imagestransform3D/" />
+  <id>http://127.0.0.1:4000/articles/imagestransform3D</id>
+  <updated>2015-05-17T00:00:00-00:00</updated>
+  <published>2015-05-23T00:00:00+08:00</published>
+  
+  <author>
+    <name>rushui</name>
+    <uri>http://127.0.0.1:4000</uri>
+    <email>tanpf2012@email.com</email>
+  </author>
+  <content type="html">
+    &lt;canvas id=&quot;canvas&quot; width=&quot;225&quot; height=&quot;609&quot; data-libpath=&quot;http://127.0.0.1:4000/assets/js/vendor/imageTransform3D.js&quot; data-imgspath=&quot;http://127.0.0.1:4000/images/imgs-yansa/&quot; style=&quot;cursor: move;&quot;&gt;你的浏览器不支持HTML5画布技术，请使用谷歌浏览器。&lt;/canvas&gt;
+&lt;script&gt;
+
+  window.imagestransform3D.load({
+    imgdata:[
+      // north
+      {img:&#39;1.jpg&#39;, x:-1000, y:0, z:1500, nx:0, nz:1},
+      {img:&#39;2.jpg&#39;, x:0,     y:0, z:1500, nx:0, nz:1},
+      {img:&#39;3.jpg&#39;, x:1000,  y:0, z:1500, nx:0, nz:1},
+      // east
+      {img:&#39;4.jpg&#39;, x:1500,  y:0, z:1000, nx:-1, nz:0},
+      {img:&#39;5.jpg&#39;, x:1500,  y:0, z:0, nx:-1, nz:0},
+      {img:&#39;6.jpg&#39;, x:1500,  y:0, z:-1000, nx:-1, nz:0},
+      // south
+      {img:&#39;7.jpg&#39;, x:1000,  y:0, z:-1500, nx:0, nz:-1},
+      {img:&#39;8.jpg&#39;, x:0,     y:0, z:-1500, nx:0, nz:-1},
+      {img:&#39;9.jpg&#39;, x:-1000, y:0, z:-1500, nx:0, nz:-1},
+      // west
+      {img:&#39;10.jpg&#39;, x:-1500, y:0, z:-1000, nx:1, nz:0},
+      {img:&#39;11.jpg&#39;, x:-1500, y:0, z:0, nx:1, nz:0},
+      {img:&#39;12.jpg&#39;, x:-1500, y:0, z:1000, nx:1, nz:0}
+    ],
+    libpath:&quot;http://127.0.0.1:4000/assets/js/vendor/imageTransform3D.js&quot;,
+    options:{
+      imagesPath: &quot;http://127.0.0.1:4000/images/imgs/dx_091/&quot;
+    }
+  });
+  &lt;/script&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/articles/imagestransform3D/&quot;&gt;同学们，你们好美有木有&lt;/a&gt; was originally published by rushui at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;文字与照片de较量&lt;/a&gt; on May 23, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   

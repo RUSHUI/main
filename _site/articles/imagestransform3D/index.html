@@ -5,19 +5,19 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="cn"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>我的第一篇文章 &#8211; 文字照片de较量</title>
+<title>同学们，你们好美有木有 &#8211; 文字照片de较量</title>
 <meta name
-="description" content="这边文章仅庆贺自己开博而书。">
-<meta name="keywords" content="【五味瓶】, 【怀念】, 【记录】">
+="description" content="暂放同学的相册">
+<meta name="keywords" content="【相册】">
 
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="zh_CN">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇文章">
-<meta property="og:description" content="这边文章仅庆贺自己开博而书。">
-<meta property="og:url" content="http://127.0.0.1:4000/articles/first-article/">
+<meta property="og:title" content="同学们，你们好美有木有">
+<meta property="og:description" content="暂放同学的相册">
+<meta property="og:url" content="http://127.0.0.1:4000/articles/imagestransform3D/">
 <meta property="og:site_name" content="文字与照片de较量">
 
 
@@ -25,7 +25,7 @@
 
 
 
-<link rel="canonical" href="http://127.0.0.1:4000/articles/first-article/">
+<link rel="canonical" href="http://127.0.0.1:4000/articles/imagestransform3D/">
 <link href="http://127.0.0.1:4000/feed.xml" type="application/atom+xml" rel="alternate" title="文字与照片de较量 Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -62,6 +62,8 @@
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://127.0.0.1:4000/images/icon-144x144.png">
 
+<script src="http://127.0.0.1:4000/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script src="http://127.0.0.1:4000/assets/js/vendor/ge1doot.js"></script>
 </head>
 
 <body id="post">
@@ -96,7 +98,7 @@
 <div id="main" role="main">
   <article class="hentry">
     
-      <img src="http://127.0.0.1:4000/images/river&mountain.png" class="entry-feature-image" alt="我的第一篇文章" >
+      <img src="http://127.0.0.1:4000/images/valley.png" class="entry-feature-image" alt="同学们，你们好美有木有" >
       
         <p class="image-credit">
           Image credit: <a href="http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/">WeGraphics</a>
@@ -104,43 +106,68 @@
         
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="http://127.0.0.1:4000/tags/#【五味瓶】" title="Pages tagged 【五味瓶】">【五味瓶】</a>&nbsp;&bull;&nbsp;<a href="http://127.0.0.1:4000/tags/#【怀念】" title="Pages tagged 【怀念】">【怀念】</a>&nbsp;&bull;&nbsp;<a href="http://127.0.0.1:4000/tags/#【记录】" title="Pages tagged 【记录】">【记录】</a></span>
+        <span class="entry-tags"><a href="http://127.0.0.1:4000/tags/#【相册】" title="Pages tagged 【相册】">【相册】</a></span>
         
-          <h1 class="entry-title">我的第一篇文章</h1>
+          <h1 class="entry-title">同学们，你们好美有木有</h1>
         
       </header>
-      <footer class="entry-meta">
+    </div><!-- /.entry-wrapper -->
+    <canvas id="canvas" width="225" height="609" data-libpath="http://127.0.0.1:4000/assets/js/vendor/imageTransform3D.js" data-imgspath="http://127.0.0.1:4000/images/imgs-yansa/" style="cursor: move;">你的浏览器不支持HTML5画布技术，请使用谷歌浏览器。</canvas>
+<script>
+
+  window.imagestransform3D.load({
+    imgdata:[
+      // north
+      {img:'1.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
+      {img:'2.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
+      {img:'3.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
+      // east
+      {img:'4.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
+      {img:'5.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
+      {img:'6.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
+      // south
+      {img:'7.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
+      {img:'8.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
+      {img:'9.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
+      // west
+      {img:'10.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
+      {img:'11.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
+      {img:'12.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
+    ],
+    libpath:"http://127.0.0.1:4000/assets/js/vendor/imageTransform3D.js",
+    options:{
+      imagesPath: "http://127.0.0.1:4000/images/imgs/dx_091/"
+    }
+  });
+  </script>
+
+
+
+     <div class="entry-wrapper">
+<footer class="entry-meta">
         
         
         
           <img src="http://127.0.0.1:4000/images/bio-photo.jpg" class="bio-photo" alt="rushui bio photo"></a>
         
         <span class="author vcard">By <span class="fn">rushui</span></span>
-        <span class="entry-date date published"><time datetime="2015-05-17T00:00:00+08:00"><i class="fa fa-calendar-o"></i> May 17, 2015</time></span>
+        <span class="entry-date date published"><time datetime="2015-05-23T00:00:00+08:00"><i class="fa fa-calendar-o"></i> May 23, 2015</time></span>
         <span class="entry-date date modified"><time datetime="2015-05-17"><i class="fa fa-pencil"></i> May 17, 2015</time></span>
         <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
         <span class="social-share-twitter">
-  <a href="http://user.qzone.qq.com/1428585211/infocenter?ptsig=LB9AHEcSouNliWqdjO3avjcpNkWYpiknSJTfpTyfpqw_?hashtags=【五味瓶】,【怀念】,【记录】&amp;text=我的第一篇文章&amp;url=http://127.0.0.1:4000/articles/first-article/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> QQ空间</a>
+  <a href="http://user.qzone.qq.com/1428585211/infocenter?ptsig=LB9AHEcSouNliWqdjO3avjcpNkWYpiknSJTfpTyfpqw_?hashtags=【相册】&amp;text=同学们，你们好美有木有&amp;url=http://127.0.0.1:4000/articles/imagestransform3D/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> QQ空间</a>
 </span>
 <span class="social-share-facebook">
-  <a href="https://github.com/RUSHUI/tanpengfei?u=http://127.0.0.1:4000/articles/first-article/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Github</a>
+  <a href="https://github.com/RUSHUI/tanpengfei?u=http://127.0.0.1:4000/articles/imagestransform3D/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Github</a>
 </span>
 <span class="social-share-googleplus">
-  <a href="https://plus.google.com/explore?url=http://127.0.0.1:4000/articles/first-article/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> Google +</a>
+  <a href="https://plus.google.com/explore?url=http://127.0.0.1:4000/articles/imagestransform3D/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> Google +</a>
 </span>
 <!-- /.social-share -->
 
         
       </footer>
       <div class="entry-content">
-        <div class="rs-article">
-<p>欢迎大家来到我的小窝，本博第一天开张，仅有寥寥文字，以后会记录一些本人与IT行业以及自己de生活经历相关；欢迎大家来这里了解我。</p>
-<label>注意：</label><i class="font-size12 notice">
-还请大家将本网址存于书签中，避免记住繁琐的网址，便于下次浏览.</i>
- 
-
-</div>
-
         
           <div id="disqus_thread"></div><!-- /#disqus_thread -->
           
@@ -172,8 +199,8 @@
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
+        <a href="http://127.0.0.1:4000/blog/start-blog/" class="btn" title="开博了，送给2015-05-17的自己">返回</a>
       
-        <a href="http://127.0.0.1:4000/blog/start-blog/" class="btn" title="开博了，送给2015-05-17的自己">继续</a>
       
     </nav><!-- /.pagination -->
   </article>

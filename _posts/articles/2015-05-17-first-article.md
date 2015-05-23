@@ -4,7 +4,7 @@ title: 我的第一篇文章
 excerpt: "这边文章仅庆贺自己开博而书。"
 modified: 2015-05-17
 categories: articles
-tags: ["【喜悦】"]
+tags: ["【五味瓶】","【怀念】","【记录】"]
 image:
   feature: river&mountain.png
   credit: WeGraphics

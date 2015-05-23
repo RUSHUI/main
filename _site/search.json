@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "同学们，你们好美有木有",
+      "link"			: "http://127.0.0.1:4000/articles/imagestransform3D/",
+      "excerpt"		: "暂放同学的相册"
+    }
+  
+
+  
+    ,{
       "title"			: "开博了，送给2015-05-17的自己",
       "link"			: "http://127.0.0.1:4000/blog/start-blog/",
       "excerpt"		: ""
