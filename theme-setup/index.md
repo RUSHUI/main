@@ -18,11 +18,11 @@ General notes and suggestions for customizing **So Simple Theme**.
 
 So Simple now requires [Jekyll](http://jekyllrb.com/) 2.x. Make sure to run `gem update jekyll` if you aren't on the latest version or `gem install jekyll` if this is your first time installing it.
 
-If you are creating a new Jekyll site using So Simple follow these steps:
+If you are creating a new Jekyll site using So Simple follow these steps:ap), [Octopress](https://github.com/octopress/octopress), etc)
 
 1. Fork the [So Simple repo](http://github.com/mmistakes/so-simple-theme/fork).
 2. Clone the repo you just forked and rename it.
-3. [Install Bundler](http://bundler.io) `gem install bundler` and Run `bundle install` to install all dependencies (Jekyll, [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitemap), [Octopress](https://github.com/octopress/octopress), etc)
+3. [Install Bundler](http://bundler.io) `gem install bundler` and Run `bundle install` to install all dependencies (Jekyll, [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitem
 4. Update `_config.yml`, add navigation, and replace demo posts and pages with your own. Full details below.
 
 If you want to use So Simple with an existing Jekyll site follow these steps:

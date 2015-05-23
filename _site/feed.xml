@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text"><span style='color:white;background-color:black;'>文字</span><span style='color:black;background-color:white;'>照片</span><div>de</div><span style='color:red;background-color:black;'>较</span><span style='color:green;background-color:black;'>量</span></title>
+<title type="text">文字与照片de较量</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2015-05-17T14:19:19+08:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://127.0.0.1:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://127.0.0.1:4000" />
+<updated>2015-05-23T16:22:26+08:00</updated>
+<id>http://127.0.0.1:4000/</id>
 <author>
   <name>rushui</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://127.0.0.1:4000/</uri>
   <email>tanpf2012@email.com</email>
 </author>
 
@@ -17,19 +17,46 @@
 
 <entry>
   <title type="html"><![CDATA[开博了，送给2015-05-17的自己]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/start-blog/" />
-  <id>http://localhost:4000/blog/start-blog</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/blog/start-blog/" />
+  <id>http://127.0.0.1:4000/blog/start-blog</id>
   <published>2015-05-18T06:26:55+08:00</published>
   <updated>2015-05-18T06:26:55+08:00</updated>
   <author>
     <name>rushui</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>tanpf2012@email.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;欢迎大家来到我的小窝，本博第一天开张，还没有写什么呢，以后会记录一些本人与IT行业以及自己de生活经历相关；欢迎大家来这里了解我。注意：&lt;i&gt;还请大家将本网址存于书签中，避免记住繁琐的网址，便于下次浏览.&lt;/i&gt;&lt;/p&gt;
+    &lt;div&gt;
+    &lt;p&gt;终于可以安静的坐下来书写喜欢的文字了。&lt;p /&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/start-blog/&quot;&gt;开博了，送给2015-05-17的自己&lt;/a&gt; was originally published by rushui at &lt;a href=&quot;http://localhost:4000&quot;&gt;<span style='color:white;background-color:black;'>文字</span><span style='color:black;background-color:white;'>照片</span><div>de</div><span style='color:red;background-color:black;'>较</span><span style='color:green;background-color:black;'>量</span>&lt;/a&gt; on May 18, 2015.&lt;/p&gt;
+    &lt;p class=&quot;rs-none&quot;&gt;
+      之所以说自己终于可以写字了，那是因为自己对于这个地方表示的非同其他de感觉（这种感觉就像你一直在用QQ空间，一直在用新浪微博，但是你也只能做一些人家想让你做的，又好比一直租房住，从这里搬到那里，再从那里搬回这里，突然有一天你有了一座自己的房子，一种突破束缚de感觉，狠自由）.
+    &lt;/p&gt;
+    &lt;p&gt;不久以前路过一条小河，遇到了一只有趣的小『青蛙』，偶听『青蛙』de生活：&lt;/p&gt;
+    &lt;p class=&quot;rs-none&quot;&gt;这个故事自从出来之后就不知道该讲给谁，但我坚信肯定有人能听得懂这个故事：&lt;/p&gt;
+    &lt;p&gt;我是从浑水潭中跳出的『青蛙』，之前的生活好平淡好无聊，每件事情都好像很复杂，自从来到这里我还没有过多少快乐，我不喜欢像生活在一只瓶子中，于世它决定要跳出水潭，虽然他对将跳出水后的世界还很不清楚，不了解即将面对de世界，甚至不了解自己，更不知道自己将何去何从。&lt;/p&gt;
+    &lt;b&gt;
+    &lt;pre class=&quot;rs-font-size18&quot;&gt;
+            但，
+          在它的小时候，
+        『青蛙』爸爸妈妈de行为深深地影响着它的行为，
+      影响着它的思想，不知不觉de在它心里萌生了一个信念，
+    深植于自己的内心.                 
+                                    ——  一个让自己满意的自己。
+    &lt;/pre&gt;
+    &lt;/b&gt;
+    &lt;p&gt;它凭着自己一股勇敢，身付着蛙爸爸和蛙妈妈的期许，背上自己的行囊，坚强的出发了。&lt;/p&gt;
+    &lt;p&gt;『青蛙』的眼中，它的这一次行走是坚定的，是必须的，世界那么大，而自己正年轻，正青春，多去体验缤纷多彩的生活，那才是一个更满意de自己，那才是自己喜欢的。&lt;/p&gt;
+
+    &lt;p&gt;懵懂的『青蛙』携带者仅有的梦想，蹦着跳着就来到了一片小河边，这里水草丰富，也许他觉得这里就是他想要来的地方，但它却忽略了这里也处处充满凶险，所以它开开心心的留下来了，它的要求并不高，它只希望能追求跟满意de自己，幸运de是这里有很多自己的同类，但是他们的皮肤与自己却各有不同，毕竟自己是独一无二的，它勇敢de个性在这里又一次发挥了作用，它主动恳求加入已有的团队，这个团队的主心骨觉得她的勇敢有所感触，然而也因它也还没有拥有绝对的权利，所以留下新成员来帮自己无形中慢慢的权利被巩固，从而留下小『青蛙』还是没有太大问题de。&lt;/p&gt;
+    &lt;p&gt;请等续，谢谢&lt;/p&gt;
+    &lt;p class=&quot;rs-none&quot;&gt;自此小『青蛙』便开始了新的生活，小『青蛙』逐渐越来越大，每次出去他都能从其他『青蛙』那里看到很厉害的扑食侦察能力&lt;/p&gt;
+
+ 
+&lt;/p&gt;&lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/blog/start-blog/&quot;&gt;开博了，送给2015-05-17的自己&lt;/a&gt; was originally published by rushui at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;文字与照片de较量&lt;/a&gt; on May 18, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -38,20 +65,26 @@
 
 <entry>
   <title type="html"><![CDATA[我的第一篇文章]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/first-article/" />
-  <id>http://localhost:4000/articles/first-article</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/articles/first-article/" />
+  <id>http://127.0.0.1:4000/articles/first-article</id>
   <updated>2015-05-17T00:00:00-00:00</updated>
   <published>2015-05-17T00:00:00+08:00</published>
   
   <author>
     <name>rushui</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>tanpf2012@email.com</email>
   </author>
   <content type="html">
-    
+    &lt;div class=&quot;rs-article&quot;&gt;
+&lt;p&gt;欢迎大家来到我的小窝，本博第一天开张，仅有寥寥文字，以后会记录一些本人与IT行业以及自己de生活经历相关；欢迎大家来这里了解我。&lt;/p&gt;
+&lt;label&gt;注意：&lt;/label&gt;&lt;i class=&quot;font-size12 notice&quot;&gt;
+还请大家将本网址存于书签中，避免记住繁琐的网址，便于下次浏览.&lt;/i&gt;
+ 
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/first-article/&quot;&gt;我的第一篇文章&lt;/a&gt; was originally published by rushui at &lt;a href=&quot;http://localhost:4000&quot;&gt;<span style='color:white;background-color:black;'>文字</span><span style='color:black;background-color:white;'>照片</span><div>de</div><span style='color:red;background-color:black;'>较</span><span style='color:green;background-color:black;'>量</span>&lt;/a&gt; on May 17, 2015.&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/articles/first-article/&quot;&gt;我的第一篇文章&lt;/a&gt; was originally published by rushui at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;文字与照片de较量&lt;/a&gt; on May 17, 2015.&lt;/p&gt;
   </content>
 </entry>
 

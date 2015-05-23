@@ -1,11 +1,12 @@
 # Site wide configuration
 
-title: <span style='color:white;background-color:black;'>文字</span><span style='color:black;background-color:white;'>照片</span><div>de</div><span style='color:red;background-color:black;'>较</span><span style='color:green;background-color:black;'>量</span>
+title: 文字与照片de较量
 locale: zh_CN
 description: rushui's blog.
 logo: site-head.png
 search: true
-url: http://rushui.github.io/tanpengfei/
+#url: http://rushui.github.io/tanpengfei
+url: http://127.0.0.1:4000
 
 # Jekyll configuration
 
