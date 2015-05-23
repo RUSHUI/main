@@ -3,7 +3,7 @@
   
     {
       "title"			: "同学们，你们好美有木有",
-      "link"			: "http://127.0.0.1:4000/articles/imagestransform3D/",
+      "link"			: "http://rushui.github.io/tanpengfei/articles/imagestransform3D/",
       "excerpt"		: "暂放同学的相册"
     }
   
@@ -11,7 +11,7 @@
   
     ,{
       "title"			: "开博了，送给2015-05-17的自己",
-      "link"			: "http://127.0.0.1:4000/blog/start-blog/",
+      "link"			: "http://rushui.github.io/tanpengfei/blog/start-blog/",
       "excerpt"		: ""
     }
   
@@ -19,7 +19,7 @@
   
     ,{
       "title"			: "我的第一篇文章",
-      "link"			: "http://127.0.0.1:4000/articles/first-article/",
+      "link"			: "http://rushui.github.io/tanpengfei/articles/first-article/",
       "excerpt"		: "这边文章仅庆贺自己开博而书。"
     }
   
@@ -41,7 +41,7 @@
   
     ,{
       "title"			: "About the Jekyll Theme",
-      "link"			: "http://127.0.0.1:4000/about/",
+      "link"			: "http://rushui.github.io/tanpengfei/about/",
       "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
     }
   
@@ -49,7 +49,7 @@
   
     ,{
       "title"			: "Theme Setup",
-      "link"			: "http://127.0.0.1:4000/theme-setup/",
+      "link"			: "http://rushui.github.io/tanpengfei/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
     }
   
