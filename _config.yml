@@ -5,8 +5,8 @@ locale: zh_CN
 description: rushui's blog.
 logo: site-head.png
 search: true
-url: http://rushui.github.io/tanpengfei
-#url: http://127.0.0.1:4000
+#url: http://rushui.github.io/tanpengfei
+url: http://127.0.0.1:4000
 
 # Jekyll configuration
 

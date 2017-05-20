@@ -4,13 +4,120 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://127.0.0.1:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://127.0.0.1:4000" />
-<updated>2015-05-23T20:37:14+08:00</updated>
+<updated>2015-10-14T13:46:51+08:00</updated>
 <id>http://127.0.0.1:4000/</id>
 <author>
   <name>rushui</name>
   <uri>http://127.0.0.1:4000/</uri>
   <email>tanpf2012@email.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[JAVASCRIPT数据类型]]></title>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/blog/JavaScript-dataType/" />
+  <id>http://127.0.0.1:4000/blog/JavaScript-dataType</id>
+  <published>2015-10-14T06:55:55+08:00</published>
+  <updated>2015-10-14T06:55:55+08:00</updated>
+  <author>
+    <name>rushui</name>
+    <uri>http://127.0.0.1:4000</uri>
+    <email>tanpf2012@email.com</email>
+  </author>
+  <content type="html">
+    &lt;div&gt;
+    &lt;ul&gt;
+        &lt;li class=&quot;list-inline&quot;&gt;&lt;a href=&quot;#baseType&quot;&gt;基本类型&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#complexType&quot;&gt;复合类型&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#spectialType&quot;&gt;特殊对象&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;article id=&quot;baseType&quot;&gt;
+        &lt;div class=&quot;article-header&quot;&gt;基本类型&lt;/div&gt;
+        &lt;div class=&quot;article-content&quot;&gt;
+            &lt;div class=&quot;list-item-content&quot;&gt;数字&lt;/div&gt;
+                采用IEEE754标准定义的64位浮点格式
+            特殊数值常量:
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;&lt;th&gt;JS变量&lt;/th&gt;&lt;th&gt;变量解释&lt;/th&gt;&lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;&lt;td&gt;Infinity&lt;/td&gt;&lt;td&gt;无穷大的特殊值&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;NaN&lt;/td&gt;&lt;td&gt;非数字值&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;Number.MAX_VALUE&lt;/td&gt;&lt;td&gt;可表示的最大数字&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;Number.MIN_VALUE&lt;/td&gt;&lt;td&gt;可表示的最小数字&lt;/td&gt;&lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+            Number.NaN 非数字值
+            Number.POSITIVE_INFINITY 正无穷大
+            Number.NEGATIVE_INFINITY 负无穷大
+            把数字转为字符串6种方式
+            &lt;pre&gt;
+                var n = 1.23456;
+                var n_as_str = n+&quot;&quot;;
+                String(n);
+                n.toString(x); //x=2,binary; x=8, octonay; x=16,hexadecimal.if empty,decimal
+                n.toFixed(x); //小数点后位数
+                n.toExponential(x); //显示指数形式,x表示小数位
+                n.toPrecision(x); //若n位数&amp;lt;x时显示为指数,x表示数字的精度
+            &lt;/pre&gt;
+            ---字符串
+            字符串转为数字
+            在数字环境,自动转换为数字,
+            &lt;pre&gt;
+                var num = &quot;2&quot; * &quot;3&quot;; //num = 6
+                var num = str_val - 0;
+                var num = Number(str_val); //以10为基数的数字有效,允许开头和结尾的空白
+                parseInt(str)
+                parseInt(str,radix) //the same with java
+                parseFloat(str)
+            &lt;/pre&gt;
+            ---布尔
+            显式转换的方法
+            &lt;pre&gt;
+            var x_as_boolean = Boolean(x);
+            var x_as_boolean = !!x;
+            &lt;/pre&gt;
+            ---null
+            表示&quot;无值&quot;.
+            对象转换:布尔环境式时,非空对象为false;字符串环境时&quot;null&quot;;数字环境时0;
+            ---undefined
+            使用未声明的变量时,或使用声明但没有赋值的变量时,或使用不存在的对象属性时,返回
+            undefined.
+            对象转换:布尔环境式时,非空对象为false;字符串环境时&quot;undefined&quot;;数字环境时NaN;
+            与null区别:
+            null是关键字,undefined不是.(ECMAScript v3定义了undefined的全局变量,初始值是undefined)
+        &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;article id=&quot;complexType&quot;&gt;
+        &lt;div class=&quot;article-header&quot;&gt;复合类型&lt;/div&gt;
+        对象:已命名的数据的集合
+        对象直接量:由一个列表构成.列表的表式形式,{key:value,*};(key=标识符/字符串,value=常量/表达式)
+        对象转换:布尔环境式时,非空对象为true;字符串环境时,toString();数字环境时,valueOf();
+        数组
+        不直持多维数组,数组元素可以是数组;
+        数组元素不必据有相同的类型
+    &lt;/article&gt;
+    &lt;article id=&quot;spectialType&quot;&gt;
+        &lt;div class=&quot;article-header&quot;&gt;复合类型&lt;/div&gt;
+        函数
+        一般语法,function name( args ) { func_body; }  var function-name=function( args ){ };
+        lambda函数,function ( args ){ function-body; }
+        构造函数,new Function( &quot;args&quot;, &quot;function-body&quot; );
+
+        特殊的js函数特殊的行为：
+        自执行函数:常见形态  (function(){})();  变异形态 (function(){}()) || +function(){}();
+        jQuery的资源加载完成回调函数:$(function(){})
+
+    &lt;/article&gt;
+    *说明
+    计划以后在note目录下发布些整理的笔记,好记心不如烂笔头.主要为了方便自己查找,若读者看了觉得哪儿理解不对,请指教.
+    这篇是关于javascript的数据类型,主要内容来自&quot;javascript权威指南&quot;.本文来自博客园-寒意，请转载注明出处，尊重作者原创。
+&lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/blog/JavaScript-dataType/&quot;&gt;JAVASCRIPT数据类型&lt;/a&gt; was originally published by rushui at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;文字与照片de较量&lt;/a&gt; on October 14, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -92,7 +199,7 @@
           在它的小时候，
         『青蛙』爸爸妈妈de行为深深地影响着它的行为，
       影响着它的思想，不知不觉de在它心里萌生了一个信念，
-    深植于自己的内心.                 
+    深植于自己的内心.
                                     ——  一个让自己满意的自己。
     &lt;/pre&gt;
     &lt;/b&gt;
@@ -103,7 +210,7 @@
     &lt;p&gt;请等续，谢谢&lt;/p&gt;
     &lt;p class=&quot;rs-none&quot;&gt;自此小『青蛙』便开始了新的生活，小『青蛙』逐渐越来越大，每次出去他都能从其他『青蛙』那里看到很厉害的扑食侦察能力&lt;/p&gt;
 
- 
+
 &lt;/p&gt;&lt;/div&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/blog/start-blog/&quot;&gt;开博了，送给2015-05-17的自己&lt;/a&gt; was originally published by rushui at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;文字与照片de较量&lt;/a&gt; on May 18, 2015.&lt;/p&gt;

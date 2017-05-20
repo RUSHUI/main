@@ -42,38 +42,38 @@ white-space: nowrap; }
 /*  Vertical Rhythm
   https://github.com/sturobson/Sassifaction
 
-  In this mixin you can specify the font size in PX and 
-  it will calculate the REM based on your $doc-font-size 
-  & $doc-line-height variables. 
+  In this mixin you can specify the font size in PX and
+  it will calculate the REM based on your $doc-font-size
+  & $doc-line-height variables.
 
-    @include font-size(24);
+    @includes font-size(24);
 
-  It will also create a bottom margin based on the 
-  $doc-font-size & $doc-line-height variables unless you 
+  It will also create a bottom margin based on the
+  $doc-font-size & $doc-line-height variables unless you
   specify that it shouldn't have one.
 
-    @include font-size(24, no);
+    @includes font-size(24, no);
 
-  Or if you want to specify a different bottom margin to 
+  Or if you want to specify a different bottom margin to
   be generated.
 
-    @include font-size(24,32);
+    @includes font-size(24,32);
 
-  This mixin also generates a pixel-less line height by 
-  default unless you specify that you either don't want 
+  This mixin also generates a pixel-less line height by
+  default unless you specify that you either don't want
   one where I'd suggest declaring 1 within the mixin.
 
-    @include font-size(24, yes, 1);
+    @includes font-size(24, yes, 1);
 
-  There's also the option to specify a different line-height 
-  for it to generate to, where you would specify the 
+  There's also the option to specify a different line-height
+  for it to generate to, where you would specify the
   line-height in (effectively) it's pixel value.
 
-    @include font-size(24, yes, 40);
+    @includes font-size(24, yes, 40);
 */
 
 @mixin font-size($size, $margin: yes, $line-height: $doc-line-height) {
-    
+
   // generates the font-size in REMs with a PX fallback
   font-size: 0px + $size;
   font-size: 0rem + $size / $doc-font-size;
@@ -85,7 +85,7 @@ white-space: nowrap; }
   @if $line-height != $doc-line-height and $line-height != 1 {
     line-height: ceil($size / $line-height) * ($line-height / $size);
   }
-  
+
   // if $line-height == 1
   // because, typing 1 is quicker than 16
   @else if $line-height == 1 {
@@ -103,30 +103,30 @@ white-space: nowrap; }
 
   // if no is bottom margin is required
   @if $margin == no {
-    margin-bottom: 0;  
-  }  
-  
+    margin-bottom: 0;
+  }
+
   // if a specific bottom margin is required
   @else if $margin != yes and $margin != no {
     margin-bottom: 0px + $margin;
-    margin-bottom: 0rem + ($margin / $doc-font-size);  
+    margin-bottom: 0rem + ($margin / $doc-font-size);
   }
 
   // if you're keeping the vertical rhythm with the margin
   @else {
     margin-bottom: 0px + $doc-line-height;
-    margin-bottom: 0rem + ($doc-line-height / $doc-font-size);  
+    margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
   }
 }
 
 // ROUND CORNERS
 // --------------------------------------------------
 
-// @include rounded(VALUE);
+// @includes rounded(VALUE);
 @mixin rounded($radius:4px) {
 border-radius : $radius; }
 
-// @include border-radius(VALUE,VALUE,VALUE,VALUE);
+// @includes border-radius(VALUE,VALUE,VALUE,VALUE);
 @mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
 border-top-right-radius : $topright;
 border-bottom-right-radius : $bottomright;
@@ -134,23 +134,23 @@ border-bottom-left-radius : $bottomleft;
 border-top-left-radius : $topleft;
 background-clip : padding-box; }
 
-// @include box-shadow(HORIZONTAL VERTICAL BLUR COLOR))
+// @includes box-shadow(HORIZONTAL VERTICAL BLUR COLOR))
 @mixin box-shadow($shadow: 0 1px 3px rgba(0,0,0,.25)) {
 -webkit-box-shadow : $shadow;
 -moz-box-shadow : $shadow;
 box-shadow : $shadow; }
 
-// @include drop-shadow(HORIZONTAL, VERTICAL, BLUR, ALPHA);
+// @includes drop-shadow(HORIZONTAL, VERTICAL, BLUR, ALPHA);
 @mixin drop-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $alpha: 0.1) {
 -webkit-box-shadow : $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
 -moz-box-shadow : $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
 box-shadow : $x-axis $y-axis $blur rgba(0, 0, 0, $alpha); }
 
-// @include text-shadow();
+// @includes text-shadow();
 @mixin text-shadow($shadow: 0 2px 3px rgba(0,0,0,.25)) {
 text-shadow : $shadow; }
 
-// @include opacity(VALUE);
+// @includes opacity(VALUE);
 @mixin opacity($opacity : .5) {
 opacity : $opacity; }
 
@@ -162,7 +162,7 @@ overflow : hidden; }
 
 // Hide from visual and speaking browsers
 @mixin hidden() {
-display : none !important; 
+display : none !important;
 visibility : hidden; }
 .hidden {
   display: none;
@@ -170,15 +170,15 @@ visibility : hidden; }
 }
 
 // Hide but maintain layout
-@mixin invisible() { 
+@mixin invisible() {
 visibility : hidden; }
 
-// @include resize(VALUE) (none, both, horizontal, vertical, inherit)
+// @includes resize(VALUE) (none, both, horizontal, vertical, inherit)
 @mixin resize($direction: both) {
 resize : $direction;
 overflow : auto; }
 
-// @include userselect(VALUE) (all, element, none, text)
+// @includes userselect(VALUE) (all, element, none, text)
 @mixin user-select($select) {
 -webkit-user-select : $select;
 -moz-user-select : $select;
@@ -186,12 +186,12 @@ overflow : auto; }
 user-select : $select; }
 
 // Hidden but available to speaking browsers
-@mixin visuallyhidden() { 
-overflow : hidden; 
+@mixin visuallyhidden() {
+overflow : hidden;
 position : absolute;
-clip : rect(0 0 0 0); 
-height : 1px; 
+clip : rect(0 0 0 0);
+height : 1px;
 width : 1px;
-margin : -1px; 
-padding : 0; 
+margin : -1px;
+padding : 0;
 border : 0; }
